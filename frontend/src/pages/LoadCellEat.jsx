@@ -12,7 +12,7 @@ function LoadCell() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://192.168.98.99:3001/api/loadcell-food-data');
+      const response = await axios.get('http://localhost:3001/api/loadcell-food-data');
       const data = response.data;
 
       // Extract and sort the data (latest first)

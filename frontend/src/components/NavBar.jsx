@@ -47,7 +47,7 @@ function NavBar() {
           </Link>
         </li>
         <li className="flex flex-col items-center">
-          <Link to="/ultrasonic" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <FaHouse  className='h-5 w-5'/>
             <span className="ml-1">Home</span>
           </Link>

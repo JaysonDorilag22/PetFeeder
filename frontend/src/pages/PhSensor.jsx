@@ -14,7 +14,7 @@ function PhSensor() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://192.168.98.99:3001/api/ph-data');
+      const response = await axios.get('http://localhost:3001/api/ph-data');
       const rawData = response.data;
 
       // Extract and sort the data (latest first)

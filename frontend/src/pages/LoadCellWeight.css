@@ -13,7 +13,7 @@
   
   .digit {
     font-family: 'Press Start 2P', cursive; /* Use a pixel font for an 8-bit effect */
-    font-size: 48px;
+    font-size:30px;
     color: #0f0; /* Green color for the display */
     text-shadow: 0 0 5px rgba(0, 255, 0, 0.8);
     animation: blink 1s step-start infinite;

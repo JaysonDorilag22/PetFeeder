@@ -22,11 +22,11 @@ function RfidScanner() {
     const fetchData = async () => {
       try {
         const [rfidResponse, phResponse, waterLevelResponse, loadCellWeightResponse, loadCellFoodResponse] = await Promise.all([
-          axios.get('http://192.168.98.99:3001/api/rfid-data'),
-          axios.get('http://192.168.98.99:3001/api/ph-data'),
-          axios.get('http://192.168.98.99:3001/api/waterlevel-data'),
-          axios.get('http://192.168.98.99:3001/api/loadcell-data'),
-          axios.get('http://192.168.98.99:3001/api/foodlevel-data')
+          axios.get('http://localhost:3001/api/rfid-data'),
+          axios.get('http://localhost:3001/api/ph-data'),
+          axios.get('http://localhost:3001/api/waterlevel-data'),
+          axios.get('http://localhost:3001/api/loadcell-data'),
+          axios.get('http://localhost:3001/api/foodlevel-data')
         ]);
 
         const rawRfidData = rfidResponse.data;

@@ -15,7 +15,7 @@ function UltraSonicSensor() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://192.168.98.99:3001/api/foodlevel-data');
+        const response = await axios.get('http://localhost:3001/api/foodlevel-data');
         const data = response.data;
   
         console.log('Fetched Data:', data); // Debug log to check data

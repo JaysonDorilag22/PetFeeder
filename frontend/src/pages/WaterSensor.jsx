@@ -12,7 +12,7 @@ function WaterSensor() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://192.168.98.99:3001/api/waterlevel-data');
+      const response = await axios.get('http://localhost:3001/api/waterlevel-data');
       const data = response.data;
 
       // Extract and sort the data (latest first)
